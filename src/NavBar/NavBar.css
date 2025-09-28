@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    font-family: 'Bitcount Ink', sans-serif;
+    color: white;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+.navbarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    padding: 0 2rem;
+    max-width: 1600px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #afaeae15;
+    border-radius: 12px;
+}
+
+.navbarLogo{
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+
+}
+.navbarLogo a{
+    color: rgb(255, 255, 255);
+}
+.navbarLogo img{
+    width: 32px;
+    padding-bottom: 5px;
+    margin-right: 15px;
+}
+
+.navbarContainer .navbarMenu{
+    display: flex;
+    text-align: center;
+    gap:1.5rem;
+    list-style: none;
+}
+
+.navbarContainer .navbarMenu li a{
+    text-decoration: none;
+    padding: 3px 20px;
+    transition: all 500ms ease;
+    white-space: nowrap;
+    color: inherit; /* match parent */
+    text-decoration: none; /* remove underline if needed */
+    font-weight: 250;
+}
+
+.navbarContainer .navbarMenu li a:hover{
+   color: rgb(255, 0, 0);
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.navbarMenuHide{
+    display: none;
+}
+
+
+
+.navbarToggle{
+    display: none;
+    background:transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    transition: all 300ms ease-out;
+}
+
+
+
+@media(max-width: 880px){
+
+    .navbarContainer{
+        backdrop-filter: none;
+    }
+
+    .navbarContainer .navbarMenu{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rrem;
+        position: absolute;
+        height: 100vh;
+        width: 180px;
+        top:0;
+        left: 0;
+        padding: 5rem 1.5rem;
+        backdrop-filter: blur(40px);
+    }
+
+    .navbarContainerHide{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+        height: 80px;
+        background-color: transparent;
+        backdrop-filter: blur(40px);
+
+    }
+
+    .navbarToggle{
+        display: block;
+        z-index: 9999;
+    }
+
+
+}

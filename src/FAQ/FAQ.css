@@ -1,0 +1,137 @@
+
+
+
+.faqComponentWrapper{
+    color: #eee;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-image:
+    radial-gradient(
+        at 0% 0%, #220202, #000000
+    );
+    /* padding-bottom: 300px; */
+}
+
+.faqWrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.faqContainer{
+    margin: 5px;
+    width: 50%;
+    min-height: 220px;
+    min-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    padding-top: 0;
+    background: linear-gradient(to right, rgb(36, 4, 4), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    border: 1px solid #afaeae15;
+    opacity: 100%;
+    transition: all 300ms ease;
+}
+
+.faqContainer p{
+    opacity: 60%;
+    transition: all 300ms ease;
+}
+
+.faqContainer:hover p{
+    opacity: 100%;
+}
+.faqContainer:hover{
+    border: 1px solid #afaeae21;
+}
+
+.faqContainer .faqTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Bitcount Ink', sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    padding: 0px;
+    margin: 0;
+    gap:0;
+}
+.faqContainer .faqTitle h2{
+    padding: 0;
+    color: red;
+}
+
+
+.faq{
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* check padding */
+    padding: 15px;
+    min-width: 300px;
+    background: linear-gradient(to right, rgb(36, 4, 4), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    border: 1px solid #afaeae15;
+    opacity: 60%;
+    
+    transition: all 300ms ease;
+}
+.faq:hover{
+    opacity: 100%;
+    border: 1px solid #afaeae21;
+
+}
+.faq h2{
+    font-size: 20px;
+}
+
+.faq{
+    transition: all 400ms ease-in-out;
+    height: 60px;
+    min-width: 533px;}
+.faq p{
+    visibility: hidden;
+    transition: all 600ms ease;
+    opacity: 0;
+}
+.faq:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.faq:hover{
+    height: 120px;}
+
+@media (max-width: 970px) {
+
+    .faqWrapper{
+        flex-direction: column;
+    }
+    .faqContainer{
+        width: 100%;
+    }
+    .faq{
+        width: 100%;
+    }
+}
+@media (max-width: 670px) {
+    .serviceContainer{
+        margin-top: 15px;
+    }
+    .faq{
+        min-width: 100px;
+        height:90px ;
+        width: 100%;
+    }
+    .faqComponentWrapper{
+        padding-top: 350px;
+        padding-bottom: 150px;
+    }
+}
+

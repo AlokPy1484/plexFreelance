@@ -1,0 +1,134 @@
+
+
+
+.formWrapper{
+    color: #eee;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-image:
+    radial-gradient(
+        at 50% 100%, #220202, #000000
+    );
+}
+
+.aboutCWrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5px;
+    flex-basis: 60%;
+    min-height: 220px;
+    min-width: 300px;
+    max-height: 400px;
+    padding: 10px;
+    margin: 20px;
+    padding-top: 0;
+    background: linear-gradient(to right, rgb(36, 4, 4), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    border: 1px solid #afaeae15;
+    opacity: 100%;
+    transition: all 300ms ease;
+}
+
+.contactContainer p{
+    opacity: 60%;
+    transition: all 300ms ease;
+}
+
+.contactContainer:hover p{
+    opacity: 100%;
+}
+.contactContainer:hover{
+    border: 1px solid #afaeae21;
+}
+
+.contactContainer .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Bitcount Ink', sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    padding: 0px;
+    margin: 0;
+    gap: 30px;
+}
+.contactContainer .title h2{
+    color: red;
+    letter-spacing: -4px;
+}
+
+
+
+.formContainer{
+    display: flex;
+    justify-content: left;
+    align-items:first baseline;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* check padding */
+    padding: 10px, 10px, 10px, 10px;
+    min-width: 300px;
+    max-width: 530px;
+    background: linear-gradient(to right, rgb(36, 4, 4), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    border: 1px solid #afaeae15;
+    opacity: 60%;
+    flex-basis: 48%;
+    transition: all 300ms ease;
+}
+.formContainer:hover{
+    opacity: 100%;
+    border: 1px solid #afaeae21;
+
+}
+.formContainer h2{
+    font-size: 25px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    width: 100%;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center; 
+}
+
+@media (max-width: 1230px) {
+
+    .contactContainer .title{
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 15px;
+    }
+    .contactContainer .title h1{
+        line-height: 0.5;
+    }
+
+}
+@media (max-width: 700px){
+    .aboutCWrapper{
+        flex-direction: column;
+        margin-top: 200px;
+        
+    }
+}
