@@ -21,6 +21,7 @@ function About(){
                 trigger:".aboutTitle",
                 start:"top 80%",
                 end:"top 30%",
+                toggleActions: "restart none reverse none",
                 markers: false,},
 
             y: 50,        // move up from 50px below
@@ -37,7 +38,7 @@ function About(){
                 trigger:".aboutWrapper",
                 start:"top 80%",
                 end:"top 30%",
-                toggleActions: "restart complete reverse none",
+                toggleActions: "restart none reverse none",
                 markers: false,},
 
             y: 50,      // move up from 50px below

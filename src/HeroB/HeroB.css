@@ -3,6 +3,9 @@ body{
     background-color: rgb(31, 3, 3);
     overflow-x: hidden;
 }
+body{
+  overflow-x: hidden;
+}
 
 
 .video-container {

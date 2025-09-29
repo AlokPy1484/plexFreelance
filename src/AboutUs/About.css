@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 
 
 .componentWrapper{
@@ -44,12 +46,14 @@
     border: 1px solid #afaeae15;
     opacity: 60%;
     font-family: "Montserrat", sans-serif;
-    transition: all 300ms ease;
+    transition: all 400ms ease-in-out;
+}
+.aboutContainer:hover h1{
+    color: red;
 }
 .aboutContainer:hover{
     opacity: 100%;
     border: 1px solid #afaeae21;
-
 }
 .aboutContainer h1{
     font-size: 40px;
@@ -78,7 +82,10 @@
 .service:hover{
     opacity: 100%;
     border: 1px solid #afaeae21;
-
+    transition: all 400ms ease-in-out;
+}
+.service:hover h2{
+    color: rgb(255, 0, 0);
 }
 .service h2{
     font-size: 25px;

@@ -11,11 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function Projects(){
+    const mm = gsap.matchMedia();
 
         useGSAP(()=>{
 
             
-
+    mm.add("(max-width: 500px)", () => {
         gsap.from(".projectCotainer", {
             scrollTrigger:{
                 trigger:".projectItem1",
@@ -25,9 +26,9 @@ function Projects(){
                 markers: false,},
                 // toggleActions:"restart complete reverse none"},
                 stagger: 0.1,
-                scale: 1.4, 
+                scale: 1.25, 
                 ease:"power2.out",
-            });
+            });})
           
         gsap.from(".projectTitle", {
             
