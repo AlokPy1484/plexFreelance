@@ -29,6 +29,20 @@ function Projects(){
                 scale: 1.25, 
                 ease:"power2.out",
             });})
+
+
+        gsap.from(".projectCotainer", {
+            scrollTrigger:{
+                trigger:".projectItem1",
+                start:"top 30%",
+                end:"top -300%",
+                scrub:true,
+                markers: false,},
+                // toggleActions:"restart complete reverse none"},
+                stagger: 0.1,
+                scale: 1.25, 
+                ease:"power2.out",
+            });
           
         gsap.from(".projectTitle", {
             
