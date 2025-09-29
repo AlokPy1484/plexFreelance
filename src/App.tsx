@@ -5,7 +5,6 @@ import HeroB from "./HeroB/HeroB.tsx"
 import NavBar from "./NavBar/NavBar.tsx"
 import Projects from "./Projects/Projects.tsx"
 import Footer from "./footer/Footer.tsx"
-import { Analytics } from "@vercel/analytics/next"
 import './index.css'
 
 
@@ -18,7 +17,6 @@ function App() {
     <FAQ/>
     <ContactUs/>
     <Footer/>
-     <Analytics />
     </div>)
 }
 
