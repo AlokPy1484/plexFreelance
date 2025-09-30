@@ -14,10 +14,11 @@ function NavBar(){
   useEffect(() => {
 
     const handleResize = () => {
-      if(window.innerWidth<600){
+      if(window.innerWidth<1000){
       setIsOpen(true)}};
-
-    window.addEventListener("resize", handleResize);
+      
+      handleResize();
+      window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
