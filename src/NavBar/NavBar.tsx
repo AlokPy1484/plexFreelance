@@ -1,32 +1,42 @@
 import './NavBar.css'
 import logo from './logo.png'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 
 function NavBar(){
 
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if(window.innerWidth<600){
+      setIsOpen(true)}};
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+    gsap.registerPlugin(ScrollTrigger);
+
 
             useGSAP(()=>{
 
-              gsap.fromTo(
-    ".navbar",   // your element selector
-    { scale: 0.8, opacity: 0 }, // starting state
-    { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" } // end state
-  );
-});
+              gsap.fromTo(".navbar",  
+                { scale: 0.8, opacity: 0 }, 
+                { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" });
+                    });
 
 
 
 
 
-  const [isOpen, setIsOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

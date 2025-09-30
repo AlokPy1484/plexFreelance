@@ -50,7 +50,7 @@ function Projects(){
                 trigger:".projectTitle",
                 start:"top 80%",
                 end:"top 30%",
-                toggleActions: "restart complete reverse none",
+                // toggleActions: "restart complete reverse none",
                 markers: false,},
 
             y: 50,        // move up from 50px below
